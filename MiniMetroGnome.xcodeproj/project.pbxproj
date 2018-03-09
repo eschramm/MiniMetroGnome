@@ -1,0 +1,563 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DAD720F320533197007790D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD720F220533197007790D4 /* AppDelegate.swift */; };
+		DAD720F520533197007790D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD720F420533197007790D4 /* ViewController.swift */; };
+		DAD720F820533197007790D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAD720F620533197007790D4 /* Main.storyboard */; };
+		DAD720FA20533197007790D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAD720F920533197007790D4 /* Assets.xcassets */; };
+		DAD720FD20533197007790D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAD720FB20533197007790D4 /* LaunchScreen.storyboard */; };
+		DAD7210820533197007790D4 /* MiniMetroGnomeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD7210720533197007790D4 /* MiniMetroGnomeTests.swift */; };
+		DAD7211320533197007790D4 /* MiniMetroGnomeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD7211220533197007790D4 /* MiniMetroGnomeUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DAD7210420533197007790D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAD720E720533197007790D4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DAD720EE20533197007790D4;
+			remoteInfo = MiniMetroGnome;
+		};
+		DAD7210F20533197007790D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAD720E720533197007790D4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DAD720EE20533197007790D4;
+			remoteInfo = MiniMetroGnome;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DAD720EF20533197007790D4 /* MiniMetroGnome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiniMetroGnome.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAD720F220533197007790D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DAD720F420533197007790D4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DAD720F720533197007790D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DAD720F920533197007790D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DAD720FC20533197007790D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DAD720FE20533197007790D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAD7210320533197007790D4 /* MiniMetroGnomeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MiniMetroGnomeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAD7210720533197007790D4 /* MiniMetroGnomeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniMetroGnomeTests.swift; sourceTree = "<group>"; };
+		DAD7210920533197007790D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAD7210E20533197007790D4 /* MiniMetroGnomeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MiniMetroGnomeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAD7211220533197007790D4 /* MiniMetroGnomeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniMetroGnomeUITests.swift; sourceTree = "<group>"; };
+		DAD7211420533197007790D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DAD720EC20533197007790D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAD7210020533197007790D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAD7210B20533197007790D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DAD720E620533197007790D4 = {
+			isa = PBXGroup;
+			children = (
+				DAD720F120533197007790D4 /* MiniMetroGnome */,
+				DAD7210620533197007790D4 /* MiniMetroGnomeTests */,
+				DAD7211120533197007790D4 /* MiniMetroGnomeUITests */,
+				DAD720F020533197007790D4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DAD720F020533197007790D4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DAD720EF20533197007790D4 /* MiniMetroGnome.app */,
+				DAD7210320533197007790D4 /* MiniMetroGnomeTests.xctest */,
+				DAD7210E20533197007790D4 /* MiniMetroGnomeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DAD720F120533197007790D4 /* MiniMetroGnome */ = {
+			isa = PBXGroup;
+			children = (
+				DAD720F220533197007790D4 /* AppDelegate.swift */,
+				DAD720F420533197007790D4 /* ViewController.swift */,
+				DAD720F620533197007790D4 /* Main.storyboard */,
+				DAD720F920533197007790D4 /* Assets.xcassets */,
+				DAD720FB20533197007790D4 /* LaunchScreen.storyboard */,
+				DAD720FE20533197007790D4 /* Info.plist */,
+			);
+			path = MiniMetroGnome;
+			sourceTree = "<group>";
+		};
+		DAD7210620533197007790D4 /* MiniMetroGnomeTests */ = {
+			isa = PBXGroup;
+			children = (
+				DAD7210720533197007790D4 /* MiniMetroGnomeTests.swift */,
+				DAD7210920533197007790D4 /* Info.plist */,
+			);
+			path = MiniMetroGnomeTests;
+			sourceTree = "<group>";
+		};
+		DAD7211120533197007790D4 /* MiniMetroGnomeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DAD7211220533197007790D4 /* MiniMetroGnomeUITests.swift */,
+				DAD7211420533197007790D4 /* Info.plist */,
+			);
+			path = MiniMetroGnomeUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DAD720EE20533197007790D4 /* MiniMetroGnome */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAD7211720533197007790D4 /* Build configuration list for PBXNativeTarget "MiniMetroGnome" */;
+			buildPhases = (
+				DAD720EB20533197007790D4 /* Sources */,
+				DAD720EC20533197007790D4 /* Frameworks */,
+				DAD720ED20533197007790D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MiniMetroGnome;
+			productName = MiniMetroGnome;
+			productReference = DAD720EF20533197007790D4 /* MiniMetroGnome.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DAD7210220533197007790D4 /* MiniMetroGnomeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAD7211A20533197007790D4 /* Build configuration list for PBXNativeTarget "MiniMetroGnomeTests" */;
+			buildPhases = (
+				DAD720FF20533197007790D4 /* Sources */,
+				DAD7210020533197007790D4 /* Frameworks */,
+				DAD7210120533197007790D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DAD7210520533197007790D4 /* PBXTargetDependency */,
+			);
+			name = MiniMetroGnomeTests;
+			productName = MiniMetroGnomeTests;
+			productReference = DAD7210320533197007790D4 /* MiniMetroGnomeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DAD7210D20533197007790D4 /* MiniMetroGnomeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAD7211D20533197007790D4 /* Build configuration list for PBXNativeTarget "MiniMetroGnomeUITests" */;
+			buildPhases = (
+				DAD7210A20533197007790D4 /* Sources */,
+				DAD7210B20533197007790D4 /* Frameworks */,
+				DAD7210C20533197007790D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DAD7211020533197007790D4 /* PBXTargetDependency */,
+			);
+			name = MiniMetroGnomeUITests;
+			productName = MiniMetroGnomeUITests;
+			productReference = DAD7210E20533197007790D4 /* MiniMetroGnomeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DAD720E720533197007790D4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Eric Schramm";
+				TargetAttributes = {
+					DAD720EE20533197007790D4 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					DAD7210220533197007790D4 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DAD720EE20533197007790D4;
+					};
+					DAD7210D20533197007790D4 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DAD720EE20533197007790D4;
+					};
+				};
+			};
+			buildConfigurationList = DAD720EA20533197007790D4 /* Build configuration list for PBXProject "MiniMetroGnome" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DAD720E620533197007790D4;
+			productRefGroup = DAD720F020533197007790D4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DAD720EE20533197007790D4 /* MiniMetroGnome */,
+				DAD7210220533197007790D4 /* MiniMetroGnomeTests */,
+				DAD7210D20533197007790D4 /* MiniMetroGnomeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DAD720ED20533197007790D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAD720FD20533197007790D4 /* LaunchScreen.storyboard in Resources */,
+				DAD720FA20533197007790D4 /* Assets.xcassets in Resources */,
+				DAD720F820533197007790D4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAD7210120533197007790D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAD7210C20533197007790D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DAD720EB20533197007790D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAD720F520533197007790D4 /* ViewController.swift in Sources */,
+				DAD720F320533197007790D4 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAD720FF20533197007790D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAD7210820533197007790D4 /* MiniMetroGnomeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAD7210A20533197007790D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAD7211320533197007790D4 /* MiniMetroGnomeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DAD7210520533197007790D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DAD720EE20533197007790D4 /* MiniMetroGnome */;
+			targetProxy = DAD7210420533197007790D4 /* PBXContainerItemProxy */;
+		};
+		DAD7211020533197007790D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DAD720EE20533197007790D4 /* MiniMetroGnome */;
+			targetProxy = DAD7210F20533197007790D4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DAD720F620533197007790D4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DAD720F720533197007790D4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DAD720FB20533197007790D4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DAD720FC20533197007790D4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DAD7211520533197007790D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DAD7211620533197007790D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DAD7211820533197007790D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VM6VE536WY;
+				INFOPLIST_FILE = MiniMetroGnome/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.eware.MiniMetroGnome;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DAD7211920533197007790D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VM6VE536WY;
+				INFOPLIST_FILE = MiniMetroGnome/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.eware.MiniMetroGnome;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DAD7211B20533197007790D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VM6VE536WY;
+				INFOPLIST_FILE = MiniMetroGnomeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.eware.MiniMetroGnomeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MiniMetroGnome.app/MiniMetroGnome";
+			};
+			name = Debug;
+		};
+		DAD7211C20533197007790D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VM6VE536WY;
+				INFOPLIST_FILE = MiniMetroGnomeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.eware.MiniMetroGnomeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MiniMetroGnome.app/MiniMetroGnome";
+			};
+			name = Release;
+		};
+		DAD7211E20533197007790D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VM6VE536WY;
+				INFOPLIST_FILE = MiniMetroGnomeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.eware.MiniMetroGnomeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MiniMetroGnome;
+			};
+			name = Debug;
+		};
+		DAD7211F20533197007790D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VM6VE536WY;
+				INFOPLIST_FILE = MiniMetroGnomeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.eware.MiniMetroGnomeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MiniMetroGnome;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DAD720EA20533197007790D4 /* Build configuration list for PBXProject "MiniMetroGnome" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAD7211520533197007790D4 /* Debug */,
+				DAD7211620533197007790D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAD7211720533197007790D4 /* Build configuration list for PBXNativeTarget "MiniMetroGnome" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAD7211820533197007790D4 /* Debug */,
+				DAD7211920533197007790D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAD7211A20533197007790D4 /* Build configuration list for PBXNativeTarget "MiniMetroGnomeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAD7211B20533197007790D4 /* Debug */,
+				DAD7211C20533197007790D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAD7211D20533197007790D4 /* Build configuration list for PBXNativeTarget "MiniMetroGnomeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAD7211E20533197007790D4 /* Debug */,
+				DAD7211F20533197007790D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DAD720E720533197007790D4 /* Project object */;
+}
