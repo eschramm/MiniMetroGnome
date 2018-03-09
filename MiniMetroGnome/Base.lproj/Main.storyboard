@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,53 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MiniMetroGnome" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="60" minValue="40" maxValue="200" translatesAutoresizingMaskIntoConstraints="NO" id="d4P-zx-x4Q">
+                                <rect key="frame" x="15" y="111" width="345" height="31"/>
+                                <connections>
+                                    <action selector="sliderChangedWithSender:" destination="BYZ-38-t0r" eventType="valueChanged" id="SaL-oh-5j2"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="60 bpm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wAu-ss-Sqx">
+                                <rect key="frame" x="146.5" y="78" width="82" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aa8-rK-fyb">
+                                <rect key="frame" x="163.5" y="168" width="48" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="buttonToggledWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Htb-gC-LYx"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="d4P-zx-x4Q" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="17" id="JHy-w7-NlP"/>
+                            <constraint firstItem="aa8-rK-fyb" firstAttribute="top" secondItem="d4P-zx-x4Q" secondAttribute="bottom" constant="27" id="VRy-gB-RTW"/>
+                            <constraint firstItem="wAu-ss-Sqx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="58" id="g4W-48-MaF"/>
+                            <constraint firstItem="wAu-ss-Sqx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hKb-BG-P7A"/>
+                            <constraint firstItem="d4P-zx-x4Q" firstAttribute="top" secondItem="wAu-ss-Sqx" secondAttribute="bottom" constant="4" id="itb-pv-MY8"/>
+                            <constraint firstItem="aa8-rK-fyb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nkt-wx-VTO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="d4P-zx-x4Q" secondAttribute="trailing" constant="17" id="pmV-UG-1wz"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="bpmLabel" destination="wAu-ss-Sqx" id="nUo-B2-qdv"/>
+                        <outlet property="slider" destination="d4P-zx-x4Q" id="Q3m-RK-KiH"/>
+                        <outlet property="toggleButton" destination="aa8-rK-fyb" id="0UM-gA-5uY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
     </scenes>
 </document>

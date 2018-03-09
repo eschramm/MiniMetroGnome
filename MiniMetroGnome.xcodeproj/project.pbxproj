@@ -14,6 +14,7 @@
 		DAD720FD20533197007790D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAD720FB20533197007790D4 /* LaunchScreen.storyboard */; };
 		DAD7210820533197007790D4 /* MiniMetroGnomeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD7210720533197007790D4 /* MiniMetroGnomeTests.swift */; };
 		DAD7211320533197007790D4 /* MiniMetroGnomeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD7211220533197007790D4 /* MiniMetroGnomeUITests.swift */; };
+		DAD72121205338B7007790D4 /* tick.aiff in Resources */ = {isa = PBXBuildFile; fileRef = DAD72120205338B7007790D4 /* tick.aiff */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		DAD7210E20533197007790D4 /* MiniMetroGnomeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MiniMetroGnomeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAD7211220533197007790D4 /* MiniMetroGnomeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniMetroGnomeUITests.swift; sourceTree = "<group>"; };
 		DAD7211420533197007790D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAD72120205338B7007790D4 /* tick.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; name = tick.aiff; path = ../../../Desktop/tick.aiff; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 				DAD7210620533197007790D4 /* MiniMetroGnomeTests */,
 				DAD7211120533197007790D4 /* MiniMetroGnomeUITests */,
 				DAD720F020533197007790D4 /* Products */,
+				DAD72120205338B7007790D4 /* tick.aiff */,
 			);
 			sourceTree = "<group>";
 		};
@@ -232,6 +235,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAD72121205338B7007790D4 /* tick.aiff in Resources */,
 				DAD720FD20533197007790D4 /* LaunchScreen.storyboard in Resources */,
 				DAD720FA20533197007790D4 /* Assets.xcassets in Resources */,
 				DAD720F820533197007790D4 /* Main.storyboard in Resources */,
