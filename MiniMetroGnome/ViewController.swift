@@ -88,10 +88,11 @@ class ViewController: UIViewController {
         if buttonTitle == "Start" {
             toggleButton.setTitle("Stop", for: .normal)
             let interval: TimeInterval = 60 / Double(bpm)
-            guard let soundTitle = clickSound.text, let sound = ClickSound(rawValue: soundTitle) else { return }
+            /*guard let soundTitle = clickSound.text, let sound = ClickSound(rawValue: soundTitle) else { return }
             let localTimer = Timer(fire: Date(), interval: interval, repeats: true, block: { (_) in
                self.soundPlayer.play(sound: sound)
-            })
+            })*/
+            let localTimer = Timer(fireAt: Date(), interval: interval, target: self, selector: #selector(timerFired), userInfo: nil, repeats: true)
             timer = localTimer
             RunLoop.main.add(localTimer, forMode: RunLoopMode.commonModes)
         } else if buttonTitle == "Stop" {
@@ -99,10 +100,16 @@ class ViewController: UIViewController {
         }
     }
     
+    @objc func timerFired() {
+        guard let soundTitle = clickSound.text, let sound = ClickSound(rawValue: soundTitle) else { return }
+        soundPlayer.play(sound: sound)
+    }
+    
     @IBAction func sliderChanged(sender: AnyObject) {
         let number = Int(slider.value)
         bpm = number
         bpmLabel.text = "\(bpm) bpm"
+        toggleButton.setTitle("Start", for: .normal)
         stopTimer()
     }
     
