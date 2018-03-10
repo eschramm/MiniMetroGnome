@@ -14,7 +14,9 @@
 		DAD720FD20533197007790D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAD720FB20533197007790D4 /* LaunchScreen.storyboard */; };
 		DAD7210820533197007790D4 /* MiniMetroGnomeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD7210720533197007790D4 /* MiniMetroGnomeTests.swift */; };
 		DAD7211320533197007790D4 /* MiniMetroGnomeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD7211220533197007790D4 /* MiniMetroGnomeUITests.swift */; };
-		DAD72121205338B7007790D4 /* tick.aiff in Resources */ = {isa = PBXBuildFile; fileRef = DAD72120205338B7007790D4 /* tick.aiff */; };
+		DAD72125205354C8007790D4 /* SoundPickerTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD72124205354C8007790D4 /* SoundPickerTVC.swift */; };
+		DAE1201120539D1000691978 /* fingerSnap.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DAE1200F20539D1000691978 /* fingerSnap.mp3 */; };
+		DAE1201220539D1000691978 /* woodBlock.wav in Resources */ = {isa = PBXBuildFile; fileRef = DAE1201020539D1000691978 /* woodBlock.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +50,9 @@
 		DAD7210E20533197007790D4 /* MiniMetroGnomeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MiniMetroGnomeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAD7211220533197007790D4 /* MiniMetroGnomeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniMetroGnomeUITests.swift; sourceTree = "<group>"; };
 		DAD7211420533197007790D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DAD72120205338B7007790D4 /* tick.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; name = tick.aiff; path = ../../../Desktop/tick.aiff; sourceTree = "<group>"; };
+		DAD72124205354C8007790D4 /* SoundPickerTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundPickerTVC.swift; sourceTree = "<group>"; };
+		DAE1200F20539D1000691978 /* fingerSnap.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = fingerSnap.mp3; sourceTree = "<group>"; };
+		DAE1201020539D1000691978 /* woodBlock.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = woodBlock.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,7 +87,8 @@
 				DAD7210620533197007790D4 /* MiniMetroGnomeTests */,
 				DAD7211120533197007790D4 /* MiniMetroGnomeUITests */,
 				DAD720F020533197007790D4 /* Products */,
-				DAD72120205338B7007790D4 /* tick.aiff */,
+				DAE1200F20539D1000691978 /* fingerSnap.mp3 */,
+				DAE1201020539D1000691978 /* woodBlock.wav */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,6 +107,7 @@
 			children = (
 				DAD720F220533197007790D4 /* AppDelegate.swift */,
 				DAD720F420533197007790D4 /* ViewController.swift */,
+				DAD72124205354C8007790D4 /* SoundPickerTVC.swift */,
 				DAD720F620533197007790D4 /* Main.storyboard */,
 				DAD720F920533197007790D4 /* Assets.xcassets */,
 				DAD720FB20533197007790D4 /* LaunchScreen.storyboard */,
@@ -235,8 +241,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DAD72121205338B7007790D4 /* tick.aiff in Resources */,
 				DAD720FD20533197007790D4 /* LaunchScreen.storyboard in Resources */,
+				DAE1201220539D1000691978 /* woodBlock.wav in Resources */,
+				DAE1201120539D1000691978 /* fingerSnap.mp3 in Resources */,
 				DAD720FA20533197007790D4 /* Assets.xcassets in Resources */,
 				DAD720F820533197007790D4 /* Main.storyboard in Resources */,
 			);
@@ -263,6 +270,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAD72125205354C8007790D4 /* SoundPickerTVC.swift in Sources */,
 				DAD720F520533197007790D4 /* ViewController.swift in Sources */,
 				DAD720F320533197007790D4 /* AppDelegate.swift in Sources */,
 			);
@@ -433,6 +441,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VM6VE536WY;
 				INFOPLIST_FILE = MiniMetroGnome/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.eware.MiniMetroGnome;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -448,6 +457,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VM6VE536WY;
 				INFOPLIST_FILE = MiniMetroGnome/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.eware.MiniMetroGnome;
 				PRODUCT_NAME = "$(TARGET_NAME)";
