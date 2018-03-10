@@ -83,20 +83,10 @@ class ViewController: UIViewController {
         
         guard let buttonTitle = toggleButton.title(for: .normal) else { return }
         
-        stopTimer()
-        
         if buttonTitle == "Start" {
-            toggleButton.setTitle("Stop", for: .normal)
-            let interval: TimeInterval = 60 / Double(bpm)
-            /*guard let soundTitle = clickSound.text, let sound = ClickSound(rawValue: soundTitle) else { return }
-            let localTimer = Timer(fire: Date(), interval: interval, repeats: true, block: { (_) in
-               self.soundPlayer.play(sound: sound)
-            })*/
-            let localTimer = Timer(fireAt: Date(), interval: interval, target: self, selector: #selector(timerFired), userInfo: nil, repeats: true)
-            timer = localTimer
-            RunLoop.main.add(localTimer, forMode: RunLoopMode.commonModes)
+            startTimer()
         } else if buttonTitle == "Stop" {
-            toggleButton.setTitle("Start", for: .normal)
+            stopTimer()
         }
     }
     
@@ -109,8 +99,16 @@ class ViewController: UIViewController {
         let number = Int(slider.value)
         bpm = number
         bpmLabel.text = "\(bpm) bpm"
-        toggleButton.setTitle("Start", for: .normal)
         stopTimer()
+    }
+    
+    func startTimer() {
+        let interval: TimeInterval = 60 / Double(bpm)
+        let localTimer = Timer(fireAt: Date(), interval: interval, target: self, selector: #selector(timerFired), userInfo: nil, repeats: true)
+        timer = localTimer
+        RunLoop.main.add(localTimer, forMode: RunLoopMode.commonModes)
+        toggleButton.setTitle("Stop", for: .normal)
+        UIApplication.shared.isIdleTimerDisabled = true
     }
     
     func stopTimer() {
@@ -118,6 +116,8 @@ class ViewController: UIViewController {
             timer.invalidate()
             self.timer = nil
         }
+        toggleButton.setTitle("Start", for: .normal)
+        UIApplication.shared.isIdleTimerDisabled = false
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -130,7 +130,6 @@ class ViewController: UIViewController {
 extension ViewController : SoundPickerDelegate {
     func soundPicker(soundPicker: SoundPickerTVC, didSelectSound sound: ClickSound) {
         stopTimer()
-        toggleButton.setTitle("Start", for: .normal)
         clickSound.text = sound.rawValue
         navigationController?.popViewController(animated: true)
     }
