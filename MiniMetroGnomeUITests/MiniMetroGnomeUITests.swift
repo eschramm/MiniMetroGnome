@@ -28,9 +28,20 @@ class MiniMetroGnomeUITests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
+    func testUIelements() {
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        
+        //ASSUMES: slider range 40 to 200, defaulted at 60 bpm
+        
+        let app = XCUIApplication()
+        let slider = app.sliders["12%"]
+        slider.adjust(toNormalizedSliderPosition: 0.8)
+        app.staticTexts["168 bpm"].tap()
+        
+        //test button toggles from Start to Stop and back
+        app.buttons["Start"].tap()
+        app.buttons["Stop"].tap()
+        app.buttons["Start"].tap()
     }
-    
 }
