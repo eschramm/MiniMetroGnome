@@ -68,10 +68,12 @@ class AudioPlayer {
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var bpmLabel: UILabel!
+    @IBOutlet weak var bpmField: UITextField!
     @IBOutlet weak var slider: UISlider!
     @IBOutlet weak var toggleButton: UIButton!
     @IBOutlet weak var clickSound: UILabel!
+    
+    @IBOutlet weak var tapGestureRecognizer: UITapGestureRecognizer!
     
     var audioPlayer: AVAudioPlayer!
     var timer: Timer?
@@ -79,8 +81,10 @@ class ViewController: UIViewController {
     let soundPlayer = AudioPlayer()
     var bpm: Int = 60
     
+    let numberFormatter = NumberFormatter()
+    
     @IBAction func buttonToggled(sender: AnyObject) {
-        
+        dismissKeyboard(sender: sender)
         guard let buttonTitle = toggleButton.title(for: .normal) else { return }
         
         if buttonTitle == "Start" {
@@ -96,10 +100,15 @@ class ViewController: UIViewController {
     }
     
     @IBAction func sliderChanged(sender: AnyObject) {
+        dismissKeyboard(sender: sender)
         let number = Int(slider.value)
         bpm = number
-        bpmLabel.text = "\(bpm) bpm"
+        bpmField.text = "\(bpm)"
         stopTimer()
+    }
+    
+    @IBAction func dismissKeyboard(sender: AnyObject) {
+        bpmField.resignFirstResponder()
     }
     
     func startTimer() {
@@ -122,6 +131,7 @@ class ViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "selectSound", let soundPickerTVC = segue.destination as? SoundPickerTVC {
+            dismissKeyboard(sender: self)
             soundPickerTVC.delegate = self
         }
     }
@@ -132,5 +142,20 @@ extension ViewController : SoundPickerDelegate {
         stopTimer()
         clickSound.text = sound.rawValue
         navigationController?.popViewController(animated: true)
+    }
+}
+
+extension ViewController : UITextFieldDelegate {
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        if let number = numberFormatter.number(from: textField.text!) {
+            if number.intValue >= 40, number.intValue <= 200 {
+                bpm = number.intValue
+                slider.value = number.floatValue
+            } else {
+                textField.text = numberFormatter.string(from: NSNumber(value: bpm))
+            }
+            stopTimer()
+        }
     }
 }
