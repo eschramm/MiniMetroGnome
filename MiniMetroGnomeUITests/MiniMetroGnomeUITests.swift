@@ -37,7 +37,6 @@ class MiniMetroGnomeUITests: XCTestCase {
         let app = XCUIApplication()
         let slider = app.sliders["12%"]
         slider.adjust(toNormalizedSliderPosition: 0.8)
-        app.staticTexts["168 bpm"].tap()
         
         //test button toggles from Start to Stop and back
         app.buttons["Start"].tap()
