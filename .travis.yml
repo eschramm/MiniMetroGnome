@@ -4,4 +4,4 @@ xcode_project: MiniMetroGnome.xcodeproj
 xcode_scheme: MiniMetroGnome
 xcode_sdk: iphonesimulator11.3
 script:
-  - xcodebuild clean test -sdk iphonesimulator -project MiniMetroGnome.xcodeproj -scheme MiniMetroGnome CODE_SIGNING_REQUIRED=NO
+  - xcodebuild clean test -sdk iphonesimulator -project MiniMetroGnome.xcodeproj -scheme MiniMetroGnome CODE_SIGNING_REQUIRED=NO -destination 'platform=iOS Simulator,name=iPhone X,OS=9.3'
